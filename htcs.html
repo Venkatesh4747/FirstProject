@@ -4,7 +4,9 @@
     <title>html css</title>
     <style>
         body {
-            background-color: skyblue;
+            background-image: url("static/set.jpg");
+            background-repeat: repeat-x;
+            background-attachment: fixed;
         }
         
         h1 {
@@ -24,12 +26,12 @@
         }
         
         p.large {
-            font-size: 150px;
+            font-size: 50px;
         }
         
         * {
             color: black;
-            font-size: 85px;
+            font-size: 30px;
             text-align: center;
         }
         
@@ -44,16 +46,31 @@
             color: black;
             text-align: left;
         }
+        
+        div {
+            background-color: lightblue;
+        }
+        
+        p {
+            background-color: yellow;
+        }
     </style>
 
     <body>
         <h1>Welcome To Our Site</h1>
         <p>In this site belongs to html and css site</p>
         <h1 class="center">You Should Learn About HTML CSS</h1>
-        <h2 class="center">You Should Learn About HTML CSS</h2>
-        <p class="center">CSS HTML JAVASCRIPT</p>
+        <h2 style="background-color: orange;" class="center">You Should Learn About HTML CSS</h2>
+        <p style="border:2px solid yellow">CSS HTML JAVASCRIPT</p>
         <p class="center large">CSS HTML JAVASCRIPT</p>
         <p id="para1">Hello Every One</p>
+
+        <h1>CSS background-color example!</h1>
+        <div>
+            This is a text inside a div element.
+            <p>This paragraph has its own background color.</p>
+            We are still in the div element.
+        </div>
 
     </body>
 </head>
